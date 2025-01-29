@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Token {
+class token {
     public static void Tb(int[] packets, int capacity, int tokenRate, int outputRate) {
         int n = packets.length;
         int tokens = 0;  // Number of tokens in the bucket

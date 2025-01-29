@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Leaky {
+class leaky {
     public static void Lb(int[] packets, int capacity, int rate) {
         int n = packets.length;
         int rem = 0; // Remaining packets in the bucket
