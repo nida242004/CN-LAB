@@ -62,3 +62,24 @@ class leaky {
         sc.close();
     }
 }
+
+
+//output
+// Enter bucket capacity:
+// 5
+// Enter fixed output rate:
+// 2
+// Enter the number of packets:
+// 5
+// Enter the size of each packet:
+// 3 2 4 1 6
+
+// Statistics:
+
+// Statistics:
+// Time            Packet Size     Accepted by Bucket      Sent          Remaining
+// 1               3               3                               2     1
+// 2               2               2                               2     1
+// 3               4               4                               2     3
+// 4               1               1                               2     2
+// 5               6               3                               2     3
