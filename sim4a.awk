@@ -24,3 +24,9 @@ END{
 printf("The Throughput from n0 to n1: %fMbps\n",((count1*pack1*8)/(time1*1000000)));
 printf("The Throughput from n1 to n2: %fMbps\n",((count2*pack2*8)/(time2*1000000)));
 }
+
+
+ns 11b.tcl          # Run NS2 simulation
+nam 11b.nam         # View network animation
+awk -f 11b.awk 11b.tr  # Analyze throughput
+grep -c "^D" 11b.tr # Count dropped packets
